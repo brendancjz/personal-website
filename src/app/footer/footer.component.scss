@@ -1,0 +1,23 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+}
+
+#cv-button {
+    color: #222222;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    text-decoration: none;
+    margin-right: 25px;
+    float: right;
+    
+}
+
+#cv-button:hover {
+    background-color: rgba(255,255,255,0.8);
+}

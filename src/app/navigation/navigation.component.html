@@ -1,0 +1,17 @@
+<div class="nav-div">
+    <div toggleButton (clickOutside)="hideTopNav()">
+        <a class="toggle-button" fxHide.gt-xs (click)="toggleTopNav()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+    </div>
+
+    <nav *ngIf="showingTopNav" [className]="isSmallScreenSize ? 'topnav toggled' : 'topnav'" fxLayout="row"
+        fxLayoutAlign="center" fxLayout.xs="column">
+        <a routerLink="/home" routerLinkActive="active" (click)="newPageEvent()">Home</a>
+        <a routerLink="/projects" routerLinkActive="active" (click)="newPageEvent()">Projects</a>
+        <a routerLink="/contact" routerLinkActive="active" (click)="newPageEvent()">Contact</a>
+        <a routerLink="/blog" routerLinkActive="active" (click)="newPageEvent()">Blog</a>
+    </nav>
+</div>

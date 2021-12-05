@@ -1,0 +1,47 @@
+/*
+.profile-photos {
+    position: relative;
+    width: 50%;
+}*/
+.home {
+    
+}
+
+.photo {
+    /* position: absolute; */
+    height: 250px;
+}
+
+#home-intro {
+    padding: 100px 0px;
+}
+
+.hello {
+    text-align: center;
+    height: 120px;
+}
+
+#hello-title {
+    margin: 0;
+}
+
+#hello-desc {
+    margin: 10px 0px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#about-me-button {
+    color: #222222;
+    font-weight: 600;
+    padding: 10px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 15px;
+    text-decoration: none;
+    
+    margin-left: 190px;
+}
+
+#about-me-button:hover {
+    background-color: rgba(255,255,255,0.8);
+}
