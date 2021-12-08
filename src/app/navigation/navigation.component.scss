@@ -1,7 +1,8 @@
 .nav-div {
   width: 100%;
-  height: 60px;
-  padding-bottom: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 /* Style the links inside the navigation bar */
@@ -19,12 +20,12 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  text-decoration: underline;
+  color: rgba(255,255,255,0.8);
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  text-decoration: underline;
+  color: rgba(255,255,255,0.8);
 }
 
 .toggle-button {
@@ -53,7 +54,7 @@
   position: absolute;
   top: 25px;
   right: 10px;
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgba(255,255,255,0.2);
   border-radius: 10px;
   text-align: center;
 }

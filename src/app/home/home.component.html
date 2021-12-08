@@ -4,10 +4,10 @@
             <h1 id="hello-title">Hello, I'm {{name}}</h1>
             <p id="hello-desc">An aspiring software engineer</p>
         </div>
-        <a id="about-me-button" routerLink="../about-me">About Me</a>
+        <button id="about-me-button" routerLink="../about-me">About Me</button>
     </div>
     <div class="profile-photos">
-        <img class="photo" id="dp-3" src="../../assets/images/profile-photo-3.png" alt="profile-photo-3">
+        <img class="photo" id="dp" [src]="imageSource" alt="profile-photo">
     </div>
 
 </div>

@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   name:string = 'Brendan';
+  numOfImages: number = 3;
+  randomNumberSelected = Math.floor(Math.random() * this.numOfImages + 1);
+  imageSource:string = '../../assets/images/profile-photo-' + this.randomNumberSelected + '.png';
 
   constructor() { }
 

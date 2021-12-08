@@ -1,0 +1,132 @@
+.project {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+.proj-main {
+    background-color: rgba(255,255,255,0.2);;
+    border-radius: 25px;
+    padding: 25px;
+    min-height: 350px;
+}
+
+.proj-writeup {
+    width: 360px;
+}
+
+.proj-writeup h1 {
+    margin-top: 0;
+}
+
+.proj-oneliner {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.proj-oneliner p {
+    color: #222222;
+    margin: 0;
+    font-style: italic;
+}
+
+.proj-desc {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 130px;
+    overflow-y: scroll;
+}
+
+.proj-desc::-webkit-scrollbar {
+    display: none;
+}
+
+.squished {
+    height: 80px;
+}
+
+.proj-side-squished {
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 55px;
+    overflow-y: scroll;
+}
+
+.proj-side-squished::-webkit-scrollbar {
+    display: none;
+}
+
+.proj-side-squished h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.proj-side-squished p {
+    margin: 0;
+    color: #222222;
+}
+
+.proj-desc p {
+    color: #222222;
+    margin: 0;
+}
+
+.proj-additionals {
+    margin: 15px 35px 15px 35px;
+}
+
+.proj-image {
+    width: 200px;
+}
+
+.photo {
+    width: 100%;
+}
+
+.proj-action {
+    margin-top: 30px;
+}
+
+#action-button {
+    color: #222222;
+    font-weight: 600;
+    width: 70px;
+    padding: 7px 15px;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 0px solid transparent;
+    text-decoration: none;
+    
+}
+
+#action-button:hover {
+    background-color: rgba(255,255,255,0.8);
+    cursor: pointer;
+}
+
+.proj-side {
+    background-color: rgba(255,255,255,0.2);;
+    border-radius: 25px;
+    padding: 25px;
+    width: 150px;
+    height: 300px;
+    text-align: center;
+}
+
+.proj-side h2 {
+    margin-top: 0;
+}
+
+.proj-side p {
+    font-weight: 600;
+}

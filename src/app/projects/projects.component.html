@@ -1,1 +1,33 @@
-<h1>Something is brewing...</h1>
+<div class="projects" >
+    <div *ngFor="let project of projects" class="project" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
+        <div class="proj-main" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
+            <div class="proj-writeup">
+                <h1>{{project.name}}</h1>
+                <div class="proj-oneliner">
+                    <p>{{project.oneLiner}}</p>
+                </div>
+                <div [className]="isSmallScreenSize ? 'proj-desc squished' : 'proj-desc'">
+                    <p>
+                        {{project.description}}
+                    </p>
+                </div>
+                <div *ngIf="isSmallScreenSize" class="proj-side-squished">
+                    <h3>Tech Used</h3>
+                    <p>{{project.techUsed.join(', ')}}</p>
+                </div>
+            </div>
+            <div class="proj-additionals">
+                <div class="proj-image">
+                    <img *ngIf="project.action.length > 0" class="photo" id="dp" [src]="project.image" alt="profile-photo">
+                </div>
+                <div *ngIf="project.action.length > 0" class="proj-action" fxLayout="row" fxLayoutAlign="center">
+                    <a id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="!isSmallScreenSize" class="proj-side">
+            <h2>Tech Used</h2>
+            <p *ngFor="let tech of project.techUsed">{{tech}}</p>
+        </div>
+    </div>
+</div>

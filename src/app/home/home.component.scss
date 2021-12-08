@@ -1,19 +1,20 @@
-/*
-.profile-photos {
-    position: relative;
-    width: 50%;
-}*/
 .home {
-    
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-photos {
+    width: 25vw;
+    min-width: 275px;
+    max-width: 350px;
 }
 
 .photo {
-    /* position: absolute; */
-    height: 250px;
+    width: 100%;
 }
 
 #home-intro {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 
 .hello {
@@ -34,11 +35,12 @@
 #about-me-button {
     color: #222222;
     font-weight: 600;
+    font-size: 16px;
     padding: 10px;
     background-color: rgba(255,255,255,0.5);
     border-radius: 15px;
     text-decoration: none;
-    
+    border: 0px solid transparent;
     margin-left: 190px;
 }
 

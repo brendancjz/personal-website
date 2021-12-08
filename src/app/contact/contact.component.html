@@ -1,11 +1,24 @@
-<div>
+<div class="contact" fxLayout="column">
     <h1>
         Let's get coffee
     </h1>
-    <form>
-        <input placeholder="your name">
-        <input placeholder="your email">
-        <textarea placeholder="your message"></textarea>
-        <input type="submit" value="Send">
+    <form action="https://formsubmit.co/brendancjz@gmail.com" method="POST" fxLayout="column">
+        <div class="input-div">
+            <input class="contact-comp" id="name-input" placeholder="your name" type="text" name="name" required>
+        
+        </div>
+        <div class="input-div">
+            <input class="contact-comp" id="email-input" placeholder="your email" type="email" name="email" required>
+
+        </div>
+        <div class="input-div">
+            <textarea required class="contact-comp" id="message-input"
+                placeholder="your message" type="text" name="message"></textarea>
+        </div>
+        <div class="input-div">
+            <button id="send-button" type="submit">Send</button>
+        </div>
+        
     </form>
+
 </div>
