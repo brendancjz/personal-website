@@ -22,7 +22,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 **Code Snippet**
 
 These screenshots showcase my first success in using Angular's framework alongside HTML code.
+
 The intention was to create scalable code such that I can future edits with ease.
+
 So, this is my attempt not to hardcode out my 'About Me' page.
 
 ![Logic Code Snippet 1](https://brendanchia.com/assets/images/screenshots/about-me-ts-1.png)
