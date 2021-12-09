@@ -16,12 +16,14 @@
 
 .proj-writeup h1 {
     margin-top: 0;
+    font-size: 30px;
 }
 
 .proj-oneliner {
     background-color: rgba(255,255,255,0.2);
     border-radius: 10px;
     padding: 10px;
+    padding-right: 15px;
     display: inline-block;
     margin-bottom: 10px;
 }
@@ -30,6 +32,7 @@
     color: #222222;
     margin: 0;
     font-style: italic;
+    font-size: 20px;
 }
 
 .proj-desc {
@@ -66,18 +69,20 @@
 .proj-side-squished h3 {
     margin-top: 0;
     margin-bottom: 5px;
+    font-size: 22px;
 }
 
 .proj-side-squished p {
     margin: 0;
     color: #222222;
     padding-bottom: 20px;
+    font-size: 20px;
 }
 
 .proj-desc p {
     color: #222222;
     margin: 0;
-    font-size: 18px;
+    font-size: 22px;
     padding-bottom: 20px;
 }
 
@@ -100,13 +105,14 @@
 #action-button {
     color: #222222;
     font-weight: 600;
+    font-size: 20px;
     width: 70px;
     padding: 10px 15px;
     margin: 0 auto;
     background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
     text-align: center;
-    font-size: 16px;
+    
     border: 0px solid transparent;
     text-decoration: none;
     
@@ -128,10 +134,13 @@
 
 .proj-side h2 {
     margin-top: 0;
+    font-size: 26px;
 }
 
 .proj-side p {
-    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
 .fadeInRight {
