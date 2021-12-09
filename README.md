@@ -30,5 +30,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Screenshots
 
+**Home Page**
 ![Front Page](https://brendanchia.com/assets/images/screenshots/front-page.png)
+
+**Code Snippet**
+These screenshots showcase my first success in using Angular's framework alongside HTML code.
+The intention was to create scalable code such that I can future edits with ease.
+So, this is my attempt not to hardcode out my 'About Me' page.
 
