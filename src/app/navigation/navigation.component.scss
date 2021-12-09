@@ -3,7 +3,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 1; //So that the animations will not be above this div
   pointer-events: none; //So that I can click the elements behind this div 
 }
 
