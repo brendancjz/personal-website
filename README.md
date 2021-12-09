@@ -1,7 +1,8 @@
 # Brendan's Website
 
 Hello! Thanks for checking out my website. View it live at [brendanchia.com](url).
-The first edition of this mini project took me 11 days to complete. It has been a blast, immedaitely applying what I have learned from Angular.
+The first edition of this mini project took me 11 days to complete. 
+It has been a blast, immedaitely applying what I have learned from Angular.
 
 If there's any feedback you would like to share regarding my website, feel free to use the 'Contact' page.
 Thank you!
