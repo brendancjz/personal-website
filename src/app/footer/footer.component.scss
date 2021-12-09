@@ -5,6 +5,11 @@
     height: 65px;
     width: 100%;
     margin-bottom: 10px;
+    pointer-events: none; //So that I can click the elements behind this div 
+}
+
+.footer-icon {
+    pointer-events: auto; //So that I can still click the elements in this div
 }
 
 .link-icon {

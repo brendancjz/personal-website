@@ -3,6 +3,12 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
+  pointer-events: none; //So that I can click the elements behind this div 
+}
+
+.nav-button {
+  pointer-events: auto; //So that I can still the elements in this div
 }
 
 /* Style the links inside the navigation bar */
@@ -38,6 +44,7 @@
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  pointer-events: auto; //So that I can still the elements in this div
 }
 
 .toggle-button:hover {
