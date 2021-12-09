@@ -4,20 +4,41 @@
     bottom: 0;
     height: 65px;
     width: 100%;
+    margin-bottom: 10px;
+}
+
+.link-icon {
+    margin: 0px 5px;
+    opacity: 0.5;
+    transition: 0.3s ease-out;
+    filter: invert(100%) sepia(57%) saturate(2%) hue-rotate(225deg) brightness(105%) contrast(100%);
+}
+
+.link-icon:hover {
+    opacity: 0.8;
+}
+
+#linkedin-icon {
+    width: 40px;
+}
+#github-icon {
+    width: 35px;
 }
 
 #cv-button {
     color: #222222;
+    height: 20px;
     font-weight: 600;
     padding: 10px;
     background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
     text-decoration: none;
+    margin-left: 5px;
     margin-right: 25px;
     float: right;
     
 }
 
-#cv-button:hover {
-    background-color: rgba(255,255,255,0.8);
-}
+// #cv-button:hover {
+//     background-color: rgba(255,255,255,0.8);
+// }
