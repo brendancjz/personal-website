@@ -1,4 +1,7 @@
-# Website
+# Brendan's Website
+
+Hello! Thanks for checking out my website. View it live at [brendanchia.com](url)
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
