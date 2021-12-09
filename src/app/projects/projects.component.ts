@@ -19,6 +19,7 @@ export interface IProject {
 export class ProjectsComponent implements OnInit {
 
   isSmallScreenSize: boolean = window.innerWidth <= 940;
+  coinToss: number = Math.floor(Math.random() * 2) + 1;
 
   constructor() { }
 

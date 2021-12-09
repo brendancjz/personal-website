@@ -101,7 +101,7 @@
     color: #222222;
     font-weight: 600;
     width: 70px;
-    padding: 7px 15px;
+    padding: 10px 15px;
     margin: 0 auto;
     background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
@@ -112,10 +112,10 @@
     
 }
 
-#action-button:hover {
-    background-color: rgba(255,255,255,0.8);
-    cursor: pointer;
-}
+// #action-button:hover {
+//     background-color: rgba(255,255,255,0.8);
+//     cursor: pointer;
+// }
 
 .proj-side {
     background-color: rgba(255,255,255,0.2);;
@@ -132,4 +132,55 @@
 
 .proj-side p {
     font-weight: 600;
+}
+
+.fadeInRight {
+    -webkit-animation: fadeInRight 1.2s both;
+    animation: fadeInRight 1.2s both;
+}
+.fadeInLeft {
+    -webkit-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
 }

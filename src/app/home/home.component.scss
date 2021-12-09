@@ -7,6 +7,29 @@
     width: 25vw;
     min-width: 275px;
     max-width: 350px;
+    -webkit-animation: fadeInRight 1.2s both;
+    animation: fadeInRight 1.2s both;
+}
+
+@-webkit-keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
 }
 
 .photo {
@@ -15,6 +38,29 @@
 
 #home-intro {
     padding: 50px 0px;
+    -webkit-animation: fadeInLeft 1.2s both;
+    animation: fadeInLeft 1.2s both;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+    }
 }
 
 .hello {
@@ -38,12 +84,12 @@
     font-size: 16px;
     padding: 10px;
     background-color: rgba(255,255,255,0.5);
-    border-radius: 15px;
+    border-radius: 10px;
     text-decoration: none;
     border: 0px solid transparent;
     margin-left: 190px;
 }
 
-#about-me-button:hover {
-    background-color: rgba(255,255,255,0.8);
-}
+// #about-me-button:hover {
+//     background-color: rgba(255,255,255,0.8);
+// }

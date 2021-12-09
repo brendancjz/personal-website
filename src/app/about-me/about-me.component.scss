@@ -15,10 +15,10 @@
     margin: 10px 15px;
 }
 
-.nav-tab:hover {
-    background-color: rgba(255,255,255,0.8);
-    cursor: pointer;
-}
+// .nav-tab:hover {
+//     background-color: rgba(255,255,255,0.8);
+//     cursor: pointer;
+// }
 
 .tab-active {
     background-color: rgba(255,255,255,0.8);
@@ -67,5 +67,11 @@
 .content-oneliner {
     color: #222222;
     font-style: italic;
+    margin-top: 0;
     margin-bottom: 10px;
+}
+
+.content-date {
+    font-size: 18px;
+    font-weight: 400;
 }

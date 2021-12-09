@@ -1,5 +1,5 @@
 <div class="projects" >
-    <div *ngFor="let project of projects" class="project" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
+<div *ngFor="let project of projects; let i = index" [className]="(i + coinToss) % 2 === 0 ? 'project fadeInRight' : 'project fadeInLeft'" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
         <div class="proj-main" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around center">
             <div class="proj-writeup">
                 <h1>{{project.name}}</h1>
@@ -21,7 +21,7 @@
                     <img *ngIf="project.action.length > 0" class="photo" id="dp" [src]="project.image" alt="profile-photo">
                 </div>
                 <div *ngIf="project.action.length > 0" class="proj-action" fxLayout="row" fxLayoutAlign="center">
-                    <a id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
+                    <a class="btn" id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
                 </div>
             </div>
         </div>

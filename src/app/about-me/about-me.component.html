@@ -1,18 +1,18 @@
 <div class="about-me" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-around">
     <div class="nav-tabs" fxLayout="column" fxLayout.xs="row" fxLayoutAlign.xs="center">
-        <div [className]="currentContent.toString() === '0' ? 'nav-tab tab-active' : 'nav-tab'" (click)="updateContentDiv(myInfoTitles.ABOUT_ME)">
+        <div [className]="currentContent.toString() === '0' ? 'nav-tab tab-active btn' : 'nav-tab btn'" (click)="updateContentDiv(myInfoTitles.ABOUT_ME)">
             <img class="icon" id="about-me-icon" src="../../assets/images/about-me-icon.png" alt="about-me">
 
         </div>
-        <div [className]="currentContent.toString() === '1' ? 'nav-tab tab-active' : 'nav-tab'" style="padding: 10px;" (click)="updateContentDiv(myInfoTitles.EDUCATION)">
+        <div [className]="currentContent.toString() === '1' ? 'nav-tab tab-active btn' : 'nav-tab btn'" style="padding: 10px;" (click)="updateContentDiv(myInfoTitles.EDUCATION)">
             <img class="icon" style="width: 35px; position: relative; top: 4px;" id="education-icon"
                 src="../../assets/images/education-icon.png" alt="education">
         </div>
-        <div [className]="currentContent.toString() === '2' ? 'nav-tab tab-active' : 'nav-tab'" (click)="updateContentDiv(myInfoTitles.WORK_EXPERIENCE)">
+        <div [className]="currentContent.toString() === '2' ? 'nav-tab tab-active btn' : 'nav-tab btn'" (click)="updateContentDiv(myInfoTitles.WORK_EXPERIENCE)">
             <img class="icon" id="work-experience-icon" src="../../assets/images/work-experience-icon.png"
                 alt="work-experience">
         </div>
-        <div [className]="currentContent.toString() === '3' ? 'nav-tab tab-active' : 'nav-tab'" (click)="updateContentDiv(myInfoTitles.SKILLS)">
+        <div [className]="currentContent.toString() === '3' ? 'nav-tab tab-active btn' : 'nav-tab btn'" (click)="updateContentDiv(myInfoTitles.SKILLS)">
             <img class="icon" id="skills-icon" src="../../assets/images/skills-icon.png" alt="skills">
         </div>
     </div>
@@ -22,7 +22,7 @@
             <div *ngFor="let content of myInfo[currentContent.toString()].content">
                 <!-- Need to edit the header, date, oneliner -->
                 <h2 class="content-header" *ngIf="content.header">
-                    {{content.header}}  <span *ngIf="content.date">[{{content.date}}]</span>
+                    {{content.header}}  <span *ngIf="content.date" class="content-date">[{{content.date}}]</span>
                 </h2>
                 
                 <p class="content-oneliner" *ngIf="content.oneliner">{{content.oneliner}}</p>
