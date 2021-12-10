@@ -77,5 +77,5 @@ export class ProjectsComponent implements OnInit {
     actionLink: "https://www.thechiacollection.com/"
   }
 
-  projects: IProject[] = [this.boLui, this.website, this.chiaCollection];
+  projects: IProject[] = [this.website, this.boLui, this.chiaCollection];
 }

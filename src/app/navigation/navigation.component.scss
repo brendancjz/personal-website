@@ -9,6 +9,19 @@
 
 .nav-button {
   pointer-events: auto; //So that I can still the elements in this div
+  font-weight: 600;
+  font-size: 22px;
+  color: #222222;
+  padding: 20px 30px;
+  text-decoration: none;
+  transition: 0.3s ease-out;
+}
+
+.white-background {
+  width: 475px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.5);
 }
 
 /* Style the links inside the navigation bar */
@@ -16,23 +29,13 @@
   margin: 2rem 0rem;
 }
 
-.topnav a {
-  font-weight: 600;
-  font-size: 22px;
-  color: #222222;
-  padding: 20px 30px;
-  text-decoration: none;
-  
-  transition: 0.3s ease-out;
-}
-
 /* Change the color of links on hover */
-.topnav a:hover {
+.nav-button:hover {
   color: rgba(255,255,255,0.8);
 }
 
 /* Add a color to the active/current link */
-.topnav a.active {
+.nav-button.active {
   color: rgba(255,255,255,0.8);
 }
 

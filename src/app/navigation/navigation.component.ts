@@ -38,7 +38,8 @@ export class ToggleButton implements OnInit {
 export class NavigationComponent implements OnInit {
   //TopNav should be showing if window is > 600
   isSmallScreenSize: boolean = window.innerWidth <= 600;
-  showingTopNav: boolean = !this.isSmallScreenSize
+  showingTopNav: boolean = !this.isSmallScreenSize;
+  hasScrollDown: boolean = false;
 
   constructor() { }
 
@@ -69,4 +70,13 @@ export class NavigationComponent implements OnInit {
     this.isSmallScreenSize = window.innerWidth <= 600;
     this.showingTopNav = !this.isSmallScreenSize;
   }
+
+  @HostListener('window:scroll', ['$event']) 
+  onScroll(event: any) {
+    if (event.srcElement.scrollingElement.scrollTop >= 100) {
+      this.hasScrollDown = true;
+    } else {
+      this.hasScrollDown = false;
+    }
+  };
 }

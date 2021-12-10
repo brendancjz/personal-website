@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-//Possible MyInfo 
+//MyInfo Titles
 export enum MyInfoTitles {
   ABOUT_ME, EDUCATION, WORK_EXPERIENCE, SKILLS
 }
 
-//This is for each content within an MyInfo. example - Accredify for Experience.
+//This is for each content within an MyInfo. example - Accredify under Experience.
 export interface IMyInfoContent {
   header: string | null,
   date: string | null,
@@ -78,6 +78,12 @@ export class AboutMeComponent implements OnInit {
   workExp: IMyInfo = {
     title: "Work Experience",
     content: [{
+      header: "NUS Teaching Assistant",
+      date: "Aug 2021 - Nov 2021",
+      oneliner: "Taught Students on Object-Orientated and Functional Programming",
+      content: ["Guided a group of 10 students through weekly technical assignments " + 
+              "with emphasis on good coding practices to develop medium scale Java programs."]
+    }, {
       header: "Accredify",
       date: "May 2021 - Aug 2021",
       oneliner: "Front-End Software Engineering Intern",
@@ -86,12 +92,6 @@ export class AboutMeComponent implements OnInit {
                 "certificate emails and courses intuitively.", 
                 "Worked closely with a small team using HTML, CSS and JavaScript " +
                 "while using Bootstrap and jQuery frameworks."]
-    }, {
-      header: "NUS Teaching Assistant",
-      date: "Aug 2021 - Nov 2021",
-      oneliner: "Taught Students on Object-Orientated and Functional Programming",
-      content: ["Guided a group of 10 students through weekly technical assignments " + 
-              "with emphasis on good coding practices to develop medium scale Java programs."]
     }]
   }
 
@@ -111,12 +111,12 @@ export class AboutMeComponent implements OnInit {
       header: "I'm familiar with",
       date: null,
       oneliner: null,
-      content: ["Angular, Git, Jarkata EE, JavaScript, PostgreSQL, Python, TypeScript"]
+      content: ["Angular, BootStrap, Git, Jarkata EE, JavaScript, jQuery, PostgreSQL, Python, TypeScript"]
     }]
   }
 
   //Key - Value pair, to correct display which MyInfo Content.
-  //I went to use toString() and the result is the index. *IMPT*
+  //NOTE: The result of Enum toString() == 'index of Enum'
   myInfo: {[key: string]: IMyInfo} = {
     0: this.aboutMe,
     1: this.education,
