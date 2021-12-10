@@ -8,7 +8,8 @@ export interface IProject {
   techUsed: string[],
   image: string,
   action: string,
-  actionLink: string
+  actionLink: string,
+  githubLink: string
 }
 
 
@@ -41,10 +42,11 @@ export class ProjectsComponent implements OnInit {
                 "personal spendings and earnings.\n\n It’s simplicity, " +
                 "convenience and fun personality makes finance " + 
                 "tracking more interactive and fun.",
-    techUsed: ["Heroku CLI", "Java", "PostgreSQL", "Telegram API"],
+    techUsed: ["Heroku CLI", "Java", "Maven", "PostgreSQL", "Telegram API"],
     image: "../../assets/images/project-image-bo-lui.png",
     action: "Try it out",
-    actionLink: "https://www.t.me/bo_lui_bot/"
+    actionLink: "https://www.t.me/bo_lui_bot/",
+    githubLink: "https://github.com/brendancjz/boluibot"
   }
 
   website: IProject = {
@@ -59,7 +61,8 @@ export class ProjectsComponent implements OnInit {
     techUsed: ["Angular", "CSS", "HTML", "TypeScript"],
     image: "",
     action: "",
-    actionLink: ""
+    actionLink: "",
+    githubLink: "https://github.com/brendancjz/personal-website"
   }
 
   chiaCollection: IProject = {
@@ -74,7 +77,8 @@ export class ProjectsComponent implements OnInit {
     techUsed: ["Adobe Illustrator", "Adobe Photoshop", "cPanel", "WooCommerce", "WordPress"],
     image: "../../assets/images/project-image-the-chia-collection.png",
     action: "Check it out",
-    actionLink: "https://www.thechiacollection.com/"
+    actionLink: "https://www.thechiacollection.com/",
+    githubLink: ""
   }
 
   projects: IProject[] = [this.website, this.boLui, this.chiaCollection];

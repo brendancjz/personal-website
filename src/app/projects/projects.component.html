@@ -33,6 +33,9 @@
             <div class="proj-side-content">
                 <p *ngFor="let tech of project.techUsed">{{tech}}</p>
             </div>
+            <a *ngIf="project.githubLink" class="github-button btn" [href]="project.githubLink" target="_blank">
+                Github
+            </a>
             
         </div>
     </div>
