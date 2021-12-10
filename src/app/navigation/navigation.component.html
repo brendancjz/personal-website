@@ -7,11 +7,11 @@
         </a>
     </div>
 
-    <nav *ngIf="showingTopNav" [className]="isSmallScreenSize ? 'topnav toggled' : 'topnav'" fxLayout="row"
+    <div *ngIf="showingTopNav" [className]="isSmallScreenSize ? 'topnav toggled' : 'topnav'" fxLayout="row"
         fxLayoutAlign="center" fxLayout.xs="column">
         <a class="nav-button" routerLink="/home" routerLinkActive="active" (click)="newPageEvent()">Home</a>
         <a class="nav-button" routerLink="/projects" routerLinkActive="active" (click)="newPageEvent()">Projects</a>
         <a class="nav-button" routerLink="/contact" routerLinkActive="active" (click)="newPageEvent()">Contact</a>
         <a class="nav-button" routerLink="/blog" routerLinkActive="active" (click)="newPageEvent()">Blog</a>
-    </nav>
+</div>
 </div>
