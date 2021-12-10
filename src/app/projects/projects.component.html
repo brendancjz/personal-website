@@ -20,11 +20,12 @@
                 </div>
             </div>
             <div class="proj-additionals">
-                <div class="proj-image">
+                <div [className]="isSmallScreenSize ? 'proj-image squished' : 'proj-image'">
                     <img *ngIf="project.action.length > 0" class="photo" id="dp" [src]="project.image" alt="profile-photo">
                 </div>
-                <div *ngIf="project.action.length > 0" class="proj-action" fxLayout="row" fxLayoutAlign="center">
-                    <a class="btn" id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
+                <div class="proj-action" fxLayout="row" fxLayoutAlign="space-around center">
+                    <a *ngIf="project.action.length > 0" class="btn" id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
+                    <a *ngIf="isSmallScreenSize && project.githubLink" class="github-button btn" [href]="project.githubLink" target="_blank">Github</a>
                 </div>
             </div>
         </div>

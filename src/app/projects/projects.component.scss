@@ -55,8 +55,11 @@
     display: none;
 }
 
-.squished {
-    height: 125px;
+.proj-desc.squished {
+    height: 225px;
+}
+.proj-image.squished {
+    padding: 0 20px;
 }
 
 .proj-side-squished {
@@ -113,7 +116,6 @@
     font-weight: 600;
     font-size: 20px;
     padding: 10px 15px;
-    margin: 0 auto;
     background-color: rgba(255,255,255,0.5);
     border-radius: 10px;
     text-align: center;
