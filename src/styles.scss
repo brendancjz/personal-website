@@ -12,6 +12,7 @@ body {
     background-image: linear-gradient(to bottom right, #7093E4, #A5E2E3);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: #93C7E3; //Fallback if the gradient is not supported.
 }
 
 body::-webkit-scrollbar {
