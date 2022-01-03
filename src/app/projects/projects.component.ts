@@ -81,5 +81,22 @@ export class ProjectsComponent implements OnInit {
     githubLink: ""
   }
 
-  projects: IProject[] = [this.website, this.boLui, this.chiaCollection];
+  fintechSocietyNFT: IProject = {
+    name: "NFT Minting and Viewing Website",
+    date: "Jan 2022",
+    oneLiner: "NUS Fintech Society NFT Website",
+    description: "I joined NUS Fintech Society in August and finally, " + 
+                "I have the opportunity to build a blockchain project! " + 
+                "\n\nTasked as the Tech Lead, I led a group of 5 members to " + 
+                "build NUS Fintech Society's first NFT Collection and Website. " +
+                "\n\nDelegated and integrated 3 main tasks well, designing the NFT " + 
+                "and metadata, building the smart contract and developing the frontend.",
+    techUsed: ["Material UI", "React.js", "Web3"],
+    image: "../../assets/images/project-image-nft.png",
+    action: "",
+    actionLink: "",
+    githubLink: "https://github.com/brendancjz/nus-fintech-society-nft"
+  }
+
+  projects: IProject[] = [this.fintechSocietyNFT, this.website, this.boLui, this.chiaCollection];
 }
