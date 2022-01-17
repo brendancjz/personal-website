@@ -7,12 +7,12 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-  { 
-    path: '',   
-    redirectTo: '/home', 
-    pathMatch: 'full' 
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   },
-  { 
+  {
     path: 'home',
     component: HomeComponent,
   },
@@ -34,19 +34,24 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/home', 
-    pathMatch: 'full' 
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes, { useHash: true })],
+//   exports: [RouterModule]
+// })
+
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
 export const routingComponents = [HomeComponent,
                                   ProjectsComponent,
-                                  ContactComponent, 
-                                  BlogComponent, 
+                                  ContactComponent,
+                                  BlogComponent,
                                   AboutMeComponent];
 
