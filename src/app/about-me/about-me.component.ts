@@ -79,18 +79,18 @@ export class AboutMeComponent implements OnInit {
     title: "Work Experience",
     content: [{
       header: "NUS Teaching Assistant",
-      date: "Aug 2021 - Nov 2021",
+      date: "Aug 2021 - May 2022",
       oneliner: "Taught Students on Object-Orientated and Functional Programming",
-      content: ["Guided a group of 10 students through weekly technical assignments " + 
+      content: ["Guided a group of 25 students through weekly technical assignments " +
               "with emphasis on good coding practices to develop medium scale Java programs."]
     }, {
       header: "Accredify",
       date: "May 2021 - Aug 2021",
       oneliner: "Front-End Software Engineering Intern",
-      content: ["Developed the User Interface for an email template builder and " + 
+      content: ["Single handedly developed the User Interface for an email template builder and " +
                 "a course program builder to allow clients to freely customise " +
-                "certificate emails and courses intuitively.", 
-                "Worked closely with a small team using HTML, CSS and JavaScript " +
+                "certificate emails and courses intuitively from scratch.",
+                "Built with HTML, CSS and JavaScript " +
                 "while using Bootstrap and jQuery frameworks."]
     }]
   }
@@ -111,7 +111,7 @@ export class AboutMeComponent implements OnInit {
       header: "I'm familiar with",
       date: null,
       oneliner: null,
-      content: ["Angular, BootStrap, Git, Jarkata EE, JavaScript, jQuery, PostgreSQL, Python, TypeScript"]
+      content: ["Angular, BootStrap, Git, Jarkata EE, JavaScript, jQuery, PostgreSQL, Python, TypeScript, React"]
     }]
   }
 
