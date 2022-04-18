@@ -16,15 +16,15 @@
                 </div>
                 <div *ngIf="isSmallScreenSize" class="proj-side-squished">
                     <h3>Tech Used</h3>
-                    <p>{{project.techUsed.join(', ')}}</p>
+                    <p>{{project.techUsed!.join(', ')}}</p>
                 </div>
             </div>
             <div class="proj-additionals">
                 <div [className]="isSmallScreenSize ? 'proj-image squished' : 'proj-image'">
-                    <img *ngIf="project.image.length > 0" class="photo" id="dp" [src]="project.image" alt="profile-photo">
+                    <img *ngIf="project?.image!.length > 0" class="photo" id="dp" [src]="project.image" alt="project-photo">
                 </div>
                 <div class="proj-action" fxLayout="row" fxLayoutAlign="space-around center">
-                    <a *ngIf="project.action.length > 0" class="btn" id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
+                    <a *ngIf="project.action!.length > 0" class="btn" id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
                     <a *ngIf="isSmallScreenSize && project.githubLink" class="github-button btn" [href]="project.githubLink" target="_blank">Github</a>
                 </div>
             </div>
