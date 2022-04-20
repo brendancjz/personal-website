@@ -12,6 +12,10 @@ Thank you!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
+## Future Features
+- View Project Details
+- Interesting Analytics about me (Spotify, Github contributions)
+- Games subdomain games.brendanchia.com
 
 ## Screenshots
 
