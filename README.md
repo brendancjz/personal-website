@@ -16,6 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - View Project Details
 - Interesting Analytics about me (Spotify, Github contributions)
 - Games subdomain games.brendanchia.com
+- Dashboard (TODO list, Spotify songs, Calendar?)
 
 ## Screenshots
 
