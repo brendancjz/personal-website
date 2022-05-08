@@ -2,7 +2,7 @@
 
 Hello! Thanks for checking out my website. View it live at [brendanchia.com](https://www.brendanchia.com/).
 The first edition of this mini project took me 11 days to complete. 
-It has been a blast, immedaitely applying what I have learned from Angular.
+It has been a blast to immediately apply what I have learned from Angular.
 
 If there's any feedback you would like to share regarding my website, feel free to use the 'Contact' page.
 Thank you!
@@ -12,6 +12,12 @@ Thank you!
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.4.
 
+## Future Features
+- View Project Details
+- Interesting Analytics about me (Spotify, Github contributions)
+- Games subdomain games.brendanchia.com
+- Dashboard (TODO list, Spotify songs, Calendar?)
+- Dark Mode
 
 ## Screenshots
 
