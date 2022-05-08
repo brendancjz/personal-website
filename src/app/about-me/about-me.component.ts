@@ -98,20 +98,20 @@ export class AboutMeComponent implements OnInit {
   skills: IMyInfo = {
     title: "Skills & Tech",
     content: [{
-      header: "10,000+ Lines of Code",
+      header: "10,000+ Lines",
       date: null,
       oneliner: null,
       content: ["Java"]
     }, {
-      header: "1,000+ Lines of Code",
+      header: "1,000+ Lines",
       date: null,
       oneliner: null,
-      content: ["MySQL, HTML, CSS"]
+      content: ["MySQL, HTML, CSS, TypeScript"]
     }, {
       header: "I'm familiar with",
       date: null,
       oneliner: null,
-      content: ["Angular, BootStrap, Git, Jarkata EE, JavaScript, jQuery, PostgreSQL, Python, TypeScript, React"]
+      content: ["Angular, BootStrap, Git, Jarkata EE, jQuery, PostgreSQL, Python, React"]
     }]
   }
 

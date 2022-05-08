@@ -18,7 +18,7 @@ export class ProjectService {
                   "convenience and fun personality makes finance " +
                   "tracking more interactive and fun.";
     boLui.techUsed = ["Heroku CLI", "Java", "Maven", "PostgreSQL", "Telegram API"];
-    boLui.image = "../../assets/images/project-image-bo-lui.png";
+    boLui.image = "../../assets/images/project-image-bo-lui.jpg";
     boLui.action = "Try it out";
     boLui.actionLink = "https://www.t.me/bo_lui_bot/";
     boLui.githubLink = "https://github.com/brendancjz/boluibot";
@@ -49,7 +49,7 @@ export class ProjectService {
                 "hoodies with my own graphic designs.\n\n It's an honour to create something that " +
                 "resonates with someone and this journey has been a wild one.";
     chiaCollection.techUsed = ["Adobe Illustrator", "Adobe Photoshop", "cPanel", "WooCommerce", "WordPress"];
-    chiaCollection.image = "../../assets/images/project-image-the-chia-collection.png";
+    chiaCollection.image = "../../assets/images/project-image-the-chia-collection.jpg";
     chiaCollection.action = "Check it out";
     chiaCollection.actionLink = "https://www.thechiacollection.com/";
     chiaCollection.githubLink = "";
@@ -66,7 +66,7 @@ export class ProjectService {
                 "\n\nDelegated and integrated 3 main tasks well, designing the NFT " +
                 "and metadata, building the smart contract and developing the frontend.";
     fintechSocietyNFT.techUsed = ["Material UI", "React.js", "Web3"];
-    fintechSocietyNFT.image = "../../assets/images/project-image-nft.png";
+    fintechSocietyNFT.image = "../../assets/images/project-image-nft.jpg";
     fintechSocietyNFT.action = "";
     fintechSocietyNFT.actionLink = "";
     fintechSocietyNFT.githubLink = "https://github.com/brendancjz/nus-fintech-society-nft";
@@ -83,7 +83,7 @@ export class ProjectService {
           "Tompang is an Ionic mobile application with an administrative JarkataEE web application, " +
           "both leveraging on Glassfish. This project is completed within a semester under the module IS3106: Enterprise Systems Interface Design and Development.";
     tompang.techUsed = ["CSS", "Glassfish", "HTML", "Ionic", "Jarkata EE", "Java", "Java Server Faces", "TypeScript"];
-    tompang.image = "../../assets/images/project-image-tompang.png";
+    tompang.image = "../../assets/images/project-image-tompang.jpg";
     tompang.action = "Demo Video";
     tompang.actionLink = "https://youtu.be/r3e0ZtRd6tQ";
     tompang.githubLink = "https://github.com/brendancjz/tompang";
