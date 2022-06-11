@@ -61,7 +61,7 @@ export class ProjectService {
     fintechSocietyNFT.oneLiner = "NUS Fintech Society NFT Website",
     fintechSocietyNFT.description = "I joined NUS Fintech Society in August and finally, " +
                 "I have the opportunity to build a blockchain project! " +
-                "\n\nTasked as the Tech Lead, I led a group of 5 members to " +
+                "\n\nTasked as the Project Lead, I led a group of 5 members to " +
                 "build NUS Fintech Society's first NFT Collection and Website. " +
                 "\n\nDelegated and integrated 3 main tasks well, designing the NFT " +
                 "and metadata, building the smart contract and developing the frontend.";
