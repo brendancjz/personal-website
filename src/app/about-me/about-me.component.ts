@@ -78,6 +78,11 @@ export class AboutMeComponent implements OnInit {
   workExp: IMyInfo = {
     title: "Work Experience",
     content: [{
+      header: "GovTech",
+      date: "May 2022 - Present",
+      oneliner: "Full Stack Mobile Engineer",
+      content: ["Developer for the LifeSG Mobile App."]
+    }, {
       header: "NUS Teaching Assistant",
       date: "Aug 2021 - May 2022",
       oneliner: "Taught Students on Object-Orientated and Functional Programming",
