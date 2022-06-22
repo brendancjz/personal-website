@@ -50,7 +50,7 @@ export class ProjectService {
                 "resonates with someone and this journey has been a wild one.";
     chiaCollection.techUsed = ["Adobe Illustrator", "Adobe Photoshop", "cPanel", "WooCommerce", "WordPress"];
     chiaCollection.image = "../../assets/images/project-image-the-chia-collection.jpg";
-    chiaCollection.action = "Check it out";
+    chiaCollection.action = "We're Closed";
     chiaCollection.actionLink = "https://www.thechiacollection.com/";
     chiaCollection.githubLink = "";
 
@@ -67,8 +67,8 @@ export class ProjectService {
                 "and metadata, building the smart contract and developing the frontend.";
     fintechSocietyNFT.techUsed = ["Material UI", "React.js", "Web3"];
     fintechSocietyNFT.image = "../../assets/images/project-image-nft.jpg";
-    fintechSocietyNFT.action = "";
-    fintechSocietyNFT.actionLink = "";
+    fintechSocietyNFT.action = "Demo Video";
+    fintechSocietyNFT.actionLink = "https://youtu.be/T_GE9wWe1v4";
     fintechSocietyNFT.githubLink = "https://github.com/brendancjz/nus-fintech-society-nft";
 
     const tompang = new Project();
