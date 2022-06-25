@@ -88,6 +88,21 @@ export class ProjectService {
     tompang.actionLink = "https://youtu.be/r3e0ZtRd6tQ";
     tompang.githubLink = "https://github.com/brendancjz/tompang";
 
-    return [tompang, fintechSocietyNFT, website, boLui, chiaCollection];
+    const bestbudsbot = new Project();
+    bestbudsbot.name = "Best Buds Bot";
+    bestbudsbot.date = "June 2022";
+    bestbudsbot.oneLiner = "Birthday Tracking Bot for Telegram Groups";
+    bestbudsbot.description = "It is a hassle to discreetly collate birthday messages for a friend in a group. " +
+          "You will need to private message everyone else in the group. \n\n" +
+          "BestBudsBot helps to automate this process, ensuring everyone's birthday in the group is accounted for. " +
+          "Now, the birthday IC will not be left out too!";
+    bestbudsbot.techUsed = ["Heroku CLI", "Java", "Maven", "PostgreSQL", "Telegram API"];
+    bestbudsbot.image = "../../assets/images/project-image-bestbuds-bot.jpg";
+    bestbudsbot.action = "Try it out";
+    bestbudsbot.actionLink = "https://t.me/bbb_bestbuds_bot";
+    bestbudsbot.githubLink = "https://github.com/brendancjz/bestbuds-bot";
+
+
+    return [bestbudsbot, tompang, fintechSocietyNFT, website, boLui, chiaCollection];
   }
 }

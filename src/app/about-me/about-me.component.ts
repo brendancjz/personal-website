@@ -39,7 +39,7 @@ export class AboutMeComponent implements OnInit {
       header: null,
       date: null,
       oneliner: null,
-      content: ["Hello! I’m a sophomore Information Systems major studying in " +
+      content: ["Hello! I’m a penultimate Information Systems major studying in " +
         "National University of Singapore. I’m an outgoing and optimistic " +
         "individual who always sees the glass half full.",
 
