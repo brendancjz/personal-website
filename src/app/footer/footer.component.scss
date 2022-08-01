@@ -5,7 +5,7 @@
     height: 65px;
     width: 100%;
     margin-bottom: 10px;
-    pointer-events: none; //So that I can click the elements behind this div 
+    pointer-events: none; //So that I can click the elements behind this div
 }
 
 .footer-icon {
@@ -47,3 +47,16 @@
 // #cv-button:hover {
 //     background-color: rgba(255,255,255,0.8);
 // }
+
+#scrollToTopBtn {
+  color: #222222;
+  height: 45px;
+  width: 45px;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  right: 25px;
+  bottom: 75px;
+}
