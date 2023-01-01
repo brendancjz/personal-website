@@ -50,8 +50,8 @@ export class AboutMeComponent implements OnInit {
       "These days my time is spent on learning to be a better software engineer, " +
       "ideating and developing software projects and catching up with my friends.",
 
-      "Out of work, you’ll find me playing computer games with my friends, binge " +
-      "watching netflix shows or playing badminton."]
+      "Out of work, you’ll find me playing computer games with my friends, working out in the gym " +
+      "or playing badminton."]
     }]
   }
 
@@ -61,7 +61,7 @@ export class AboutMeComponent implements OnInit {
       header: "National University of Singapore",
       date: "Aug 2020 - Jun 2024",
       oneliner: "Bachelor of Computing in Information Systems (Honours)",
-      content: ["CCA: NUS FinTech Society — Blockchain Developer"]
+      content: ["CCA: NUS FinTech Society — Blockchain Developer, Residential College 4 Student Badminton Coach"]
     }, {
       header: "Temasek Junior College",
       date: "Jan 2016 - Dec 2017",
@@ -78,10 +78,16 @@ export class AboutMeComponent implements OnInit {
   workExp: IMyInfo = {
     title: "Work Experience",
     content: [{
-      header: "GovTech",
-      date: "May 2022 - Present",
+      header: "Government Technology Agency Singapore",
+      date: "May 2022 - Jan 2023",
       oneliner: "Full Stack Mobile Engineer",
-      content: ["Developer for the LifeSG Mobile App."]
+      content: ["Developed a feature on a mobile app with a React " +
+                "Native and Next.js frontend and Node.js backend. This " +
+                "feature allows users to submit improvements to any " +
+                "Singapore government agencies through a single entry point.",
+              "Designed and implemented unit and integration tests " +
+              "for multiple endpoints using Jest testing framework.",
+              "Leveraged on Agile methodologies to fulfill project requirements."]
     }, {
       header: "NUS Teaching Assistant",
       date: "Aug 2021 - May 2022",
@@ -111,12 +117,12 @@ export class AboutMeComponent implements OnInit {
       header: "1,000+ Lines",
       date: null,
       oneliner: null,
-      content: ["MySQL, HTML, CSS, TypeScript"]
+      content: ["MySQL, HTML, CSS, JavaScript, TypeScript"]
     }, {
       header: "I'm familiar with",
       date: null,
       oneliner: null,
-      content: ["Angular, BootStrap, Git, Jarkata EE, jQuery, PostgreSQL, Python, React"]
+      content: ["Angular, Atlassian Suite, BootStrap, Git, Jarkata EE, jQuery, PostgreSQL, Postman, Python, React"]
     }]
   }
 
