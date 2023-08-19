@@ -102,7 +102,20 @@ export class ProjectService {
     bestbudsbot.actionLink = "https://t.me/bbb_bestbuds_bot";
     bestbudsbot.githubLink = "https://github.com/brendancjz/bestbuds-bot";
 
+    const splitEase = new Project();
+    splitEase.name = "SplitEase";
+    splitEase.date = "April 2023";
+    splitEase.oneLiner = "SplitEase helps to split the gathering's bill with ease";
+    splitEase.description = "During my semester-long Student Exchange Program in the UK, my friends and I had trouble " +
+          "splitting the bill for our shared dinners. \n\nInterested in developing the most efficient " +
+          "algorithm to help split our bills equally. Within the week of 22 April 2023, SplitEase was born!";
+    splitEase.techUsed = ["Angular", "CSS", "HTML", "TypeScript"];
+    splitEase.action = "Try it out";
+    splitEase.actionLink = "https://splitease.brendanchia.com";
+    splitEase.image = "../../assets/images/project-image-splitease.jpg";
+    splitEase.githubLink = "https://github.com/brendancjz/splitease";
 
-    return [bestbudsbot, tompang, fintechSocietyNFT, website, boLui, chiaCollection];
+
+    return [splitEase, bestbudsbot, tompang, fintechSocietyNFT, website, boLui, chiaCollection];
   }
 }
