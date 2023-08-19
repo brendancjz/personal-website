@@ -39,7 +39,7 @@ export class AboutMeComponent implements OnInit {
       header: null,
       date: null,
       oneliner: null,
-      content: ["Hello! I’m a penultimate Information Systems major studying in " +
+      content: ["Hello! I’m a senior Information Systems major studying in " +
         "National University of Singapore. I’m an outgoing and optimistic " +
         "individual who always sees the glass half full.",
 
@@ -77,7 +77,17 @@ export class AboutMeComponent implements OnInit {
 
   workExp: IMyInfo = {
     title: "Work Experience",
-    content: [{
+    content: [
+      {
+        header: "Goldman Sachs Singapore",
+        date: "Jun 2023 - Aug 2023",
+        oneliner: "Summer Technology Analyst",
+        content: ["Architected multiple data pipelines utilising Java " +
+        "Spring libraries, such as Spring Data Mongo and " +
+        "Elasticsearch, to migrate and sync over 100,000 " +
+        "sets of data from production database to business " +
+        "user interface daily."]
+      }, {
       header: "Government Technology Agency Singapore",
       date: "May 2022 - Jan 2023",
       oneliner: "Full Stack Mobile Engineer",
@@ -122,7 +132,7 @@ export class AboutMeComponent implements OnInit {
       header: "I'm familiar with",
       date: null,
       oneliner: null,
-      content: ["Angular, Atlassian Suite, BootStrap, Git, Jarkata EE, jQuery, PostgreSQL, Postman, Python, React"]
+      content: ["Angular, Atlassian Suite, Elasticsearch, Git, Jarkata EE, Java Spring Boot, jQuery, MongoDB, PostgreSQL, Postman, Python, React, Swagger.io"]
     }]
   }
 
