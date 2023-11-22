@@ -21,17 +21,17 @@
             </div>
             <div class="proj-additionals">
                 <div [className]="isSmallScreenSize ? 'proj-image squished' : 'proj-image'">
-                    <img *ngIf="project?.image!.length > 0" class="photo" id="dp" [src]="project.image" alt="project-photo">
+                    <img *ngIf="project.image" class="photo" id="dp" [src]="project.image" alt="project-photo">
                 </div>
                 <div class="proj-action" fxLayout="row" fxLayoutAlign="space-around center">
-                    <a *ngIf="project.action!.length > 0" class="btn" id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
+                    <a *ngIf="project.action" class="btn" id="action-button" [href]="project.actionLink" target="_blank">{{project.action}}</a>
                     <a *ngIf="isSmallScreenSize && project.githubLink" class="github-button btn" [href]="project.githubLink" target="_blank">Github</a>
                 </div>
             </div>
         </div>
         <div *ngIf="!isSmallScreenSize" class="proj-side">
             <h2>Tech Used</h2>
-            <div class="proj-side-content">
+            <div [className]="project.githubLink ? 'proj-side-content' : 'proj-side-content-no-link'">
                 <p *ngFor="let tech of project.techUsed">{{tech}}</p>
             </div>
             <a *ngIf="project.githubLink" class="github-button btn" [href]="project.githubLink" target="_blank">

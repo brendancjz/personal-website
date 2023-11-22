@@ -150,6 +150,15 @@
     display: none;
 }
 
+.proj-side-content-no-link {
+  margin-bottom: 30px;
+  height: 220px;
+  overflow-y: scroll;
+}
+
+.proj-side-content-no-link::-webkit-scrollbar {
+  display: none;
+}
 
 .proj-side h2 {
     margin-top: 0;
