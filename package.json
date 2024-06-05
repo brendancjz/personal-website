@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "update": "ng update @angular/core@14 @angular/cli@14"
+    "update": "ng update @angular/core@14 @angular/cli@14 --force"
   },
   "private": true,
   "dependencies": {
