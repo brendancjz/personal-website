@@ -93,6 +93,14 @@ export class AboutMeComponent implements OnInit {
     title: 'Work Experience',
     content: [
       {
+        header: 'Shopee Singapore',
+        date: 'Jun 2024 - Present',
+        oneliner: 'Front-end Software Engineer',
+        content: [
+          'Fresh graduate working in Frontend Marketplace Team.',
+        ],
+      },
+      {
         header: 'Goldman Sachs Singapore',
         date: 'Jun 2023 - Aug 2023',
         oneliner: 'Summer Technology Analyst',

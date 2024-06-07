@@ -5,16 +5,15 @@
             <img class="icon" id="about-me-icon" src="../../assets/images/about-me-icon.png" alt="about-me">
 
         </div>
-        <div [className]="currentContent.toString() === '1' ? 'nav-tab tab-active btn' : 'nav-tab btn'"
-            style="padding: 10px;" (click)="updateContentDiv(myInfoTitles.EDUCATION)">
-            <img class="icon" style="width: 35px; position: relative; top: 4px;" id="education-icon"
-                src="../../assets/images/education-icon.png" alt="education">
-        </div>
         <div [className]="currentContent.toString() === '2' ? 'nav-tab tab-active btn' : 'nav-tab btn'"
             (click)="updateContentDiv(myInfoTitles.WORK_EXPERIENCE)">
             <img class="icon" id="work-experience-icon" src="../../assets/images/work-experience-icon.png"
                 alt="work-experience">
-        </div>
+        </div><div [className]="currentContent.toString() === '1' ? 'nav-tab tab-active btn' : 'nav-tab btn'"
+        style="padding: 10px;" (click)="updateContentDiv(myInfoTitles.EDUCATION)">
+        <img class="icon" style="width: 35px; position: relative; top: 4px;" id="education-icon"
+            src="../../assets/images/education-icon.png" alt="education">
+    </div>
         <div [className]="currentContent.toString() === '3' ? 'nav-tab tab-active btn' : 'nav-tab btn'"
             (click)="updateContentDiv(myInfoTitles.SKILLS)">
             <img class="icon" id="skills-icon" src="../../assets/images/skills-icon.png" alt="skills">
