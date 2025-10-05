@@ -43,13 +43,9 @@ export class AboutMeComponent implements OnInit {
         date: null,
         oneliner: null,
         content: [
-          'Hello! I’m a senior Information Systems major studying in ' +
-            'National University of Singapore. I’m an outgoing and optimistic ' +
-            'individual who always sees the glass half full.',
-
-          'Currently, looking for opportunities to work with a company that ' +
-            'will bring my expertise up a notch and allow me to make an impact in ' +
-            'the industry.',
+          'Hello! I’m currently a Frontend Software Engineer at Shopee. I play an impactful role ' +
+            'in delivering the best UI/UX experiences for vouchers and product listings on the ' +
+            'Shopee website and in dabbling in AI to boost developer or business efficiencies.',
 
           'These days my time is spent on learning to be a better software engineer, ' +
             'ideating and developing software projects and catching up with my friends.',
@@ -96,9 +92,7 @@ export class AboutMeComponent implements OnInit {
         header: 'Shopee Singapore',
         date: 'Jun 2024 - Present',
         oneliner: 'Front-end Software Engineer',
-        content: [
-          'Fresh graduate working in Frontend Marketplace Team.',
-        ],
+        content: ['Busy developing in Frontend Marketplace Team.'],
       },
       {
         header: 'Goldman Sachs Singapore',
@@ -171,7 +165,7 @@ export class AboutMeComponent implements OnInit {
         date: null,
         oneliner: null,
         content: [
-          'Angular, Atlassian Suite, Elasticsearch, Git, Jarkata EE, Java Spring Boot, jQuery, MongoDB, PostgreSQL, Postman, Python, React, React Native, Socket.io, Swagger.io',
+          'Angular, Atlassian Suite, Elasticsearch, Git, Jarkata EE, Java Spring Boot, jQuery, MongoDB, NextJS, NestJS, PostgreSQL, Postman, Python, React, React Native, Socket.io, Swagger.io',
         ],
       },
     ],

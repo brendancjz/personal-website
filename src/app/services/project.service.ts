@@ -177,11 +177,28 @@ export class ProjectService {
       'Socket.io',
       'TypeScript',
     ];
-    virtualNursing.image = '../../assets/images/project-image-virtual-nursing-dashboard.jpg';
+    virtualNursing.image =
+      '../../assets/images/project-image-virtual-nursing-dashboard.jpg';
     virtualNursing.action = 'Demo Video';
     virtualNursing.actionLink = 'https://youtu.be/jNmDPle2pJY';
 
+    const howLongMore = new Project();
+    howLongMore.name = 'How Long More';
+    howLongMore.date = 'Jul 2025';
+    howLongMore.oneLiner = 'Bus Timing App & More';
+    howLongMore.description =
+      'How Long More is a Progressive Web App (PWA) that provides real-time Singapore bus arrival timings. ' +
+      'It also integrates with public SG APIs to offer useful features such as weather forecasts, carpark ' +
+      'availability, and live traffic camera feeds. \n\n' +
+      "As a PWA, it can be installed directly on your device's home screen and functions like a native app " +
+      'with Location Services and Notifications support.';
+    howLongMore.techUsed = ['NextJS', 'PWA', 'TypeScript', 'Vercel'];
+    howLongMore.image = '../../assets/images/project-image-how-long-more.jpg';
+    howLongMore.action = 'Try it out';
+    howLongMore.actionLink = 'https://howlongmore.brendanchia.com';
+
     return [
+      howLongMore,
       virtualNursing,
       splitEase,
       bestbudsbot,
