@@ -1,0 +1,115 @@
+<div class="open-source">
+  <header class="open-source-header">
+    <h1>Open source</h1>
+    <p class="lede">Merged pull requests</p>
+  </header>
+
+  <div
+    class="repo-filters"
+    *ngIf="repos.length"
+    role="tablist"
+    aria-label="Filter by repository"
+  >
+    <button
+      type="button"
+      *ngFor="let tab of filterTabs"
+      class="filter-tab"
+      [class.active]="selectedFilter === tab.id"
+      (click)="selectFilter(tab.id)"
+      role="tab"
+      [attr.aria-selected]="selectedFilter === tab.id"
+    >
+      {{ tab.label }}
+    </button>
+  </div>
+
+  <div class="status-bar" *ngIf="!loading && !error">
+    <span class="count">{{ items.length }} loaded</span>
+    <span class="meta" *ngIf="selectedFilter === 'all' && totalCount > 0">
+      · {{ totalCount }} total matches across repos
+    </span>
+    <span class="meta" *ngIf="selectedFilter !== 'all' && totalCount > items.length">
+      · {{ totalCount }} total on GitHub (search returns up to 100 per request)
+    </span>
+    <span class="warn" *ngIf="incompleteResults">Incomplete results (GitHub timed out part of the query).</span>
+  </div>
+
+  <div class="state-message" *ngIf="loading">Loading repository list and pull requests…</div>
+  <div class="state-message error" *ngIf="error">{{ error }}</div>
+
+  <ul
+    id="open-source-pr-list"
+    class="pr-list"
+    *ngIf="!loading && !error && items.length"
+    aria-label="Merged pull requests"
+  >
+    <li *ngFor="let pr of pagedItems" class="pr-row">
+      <div class="pr-icon-wrap" aria-hidden="true">
+        <svg class="pr-icon" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
+          <path
+            d="M5 3.254V3.25v.005a.75.75 0 110-.005v.004zm.45 1.9a2.25 2.25 0 10-1.95.218v5.256a2.25 2.25 0 101.5 0V7.123A5.735 5.735 0 009.25 9h1.378a2.251 2.251 0 100-1.5H9.25a4.25 4.25 0 01-3.8-2.346zM12.75 9a.75.75 0 100-1.5.75.75 0 000 1.5zm-8.5 4.5a.75.75 0 100-1.5.75.75 0 000 1.5z"
+          />
+        </svg>
+      </div>
+      <div class="pr-main">
+        <a class="pr-title" [href]="pr.html_url" target="_blank" rel="noopener noreferrer">{{
+          pr.title
+        }}</a>
+        <div class="pr-meta">
+          #{{ pr.number }} merged {{ pr.mergedLabel }} by
+          <span class="author-inline">
+            <img
+              *ngIf="pr.authorAvatarUrl"
+              class="author-avatar"
+              [src]="pr.authorAvatarUrl"
+              [alt]="'Avatar for ' + pr.authorLogin"
+              width="20"
+              height="20"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="author">{{ pr.authorLogin }}</span>
+          </span>
+          <span class="repo-badge">{{ pr.repoFullName }}</span>
+        </div>
+      </div>
+      <div class="pr-comments" *ngIf="pr.comments > 0" [attr.title]="pr.comments + ' comments'">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path
+            d="M1 2.75C1 1.784 1.784 1 2.75 1h10.5c.966 0 1.75.784 1.75 1.75v7.5A1.75 1.75 0 0113.25 12H9.06l-2.573 2.573A1.458 1.458 0 014 13.543V12H2.75A1.75 1.75 0 011 10.25v-7.5z"
+          />
+        </svg>
+        <span>{{ pr.comments }}</span>
+      </div>
+    </li>
+  </ul>
+
+  <nav
+    class="pager"
+    *ngIf="!loading && !error && items.length"
+    aria-label="Pagination"
+  >
+    <span class="pager-range">Showing {{ pageRangeLabel }}</span>
+    <div class="pager-actions">
+      <button
+        type="button"
+        class="pager-btn"
+        (click)="prevPage()"
+        [disabled]="!canPrevPage"
+      >
+        Previous
+      </button>
+      <span class="pager-pos">Page {{ currentPage }} of {{ totalPages }}</span>
+      <button
+        type="button"
+        class="pager-btn"
+        (click)="nextPage()"
+        [disabled]="!canNextPage"
+      >
+        Next
+      </button>
+    </div>
+  </nav>
+
+  <p class="empty" *ngIf="!loading && !error && !items.length">No merged PRs matched this filter.</p>
+</div>

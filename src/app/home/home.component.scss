@@ -4,9 +4,13 @@
 }
 
 .profile-photos {
-    width: 25vw;
-    min-width: 275px;
+    width: min(350px, 85vw);
     max-width: 350px;
+    aspect-ratio: 1 / 1;
+    border-radius: 24px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
     -webkit-animation: fadeInRight 1.2s both;
     animation: fadeInRight 1.2s both;
 }
@@ -34,7 +38,10 @@
 
 .photo {
     width: 100%;
-    border-radius: 55px;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
 }
 
 #home-intro {

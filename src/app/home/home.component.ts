@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  name:string = 'Brendan';
-  numOfImages: number = 3;
+  name = 'Brendan';
+  /** Bump when adding more `profile-photo-N.jpg` + `.webp` under `src/assets/images/`. */
+  numOfImages = 1;
   randomNumberSelected = Math.floor(Math.random() * this.numOfImages + 1);
-  imageSource:string = '../../assets/images/profile-photo-' + this.randomNumberSelected + '.jpg';
+  webpSource = `/assets/images/profile-photo-${this.randomNumberSelected}.webp`;
+  jpgSource = `/assets/images/profile-photo-${this.randomNumberSelected}.jpg`;
 
   constructor() { }
 

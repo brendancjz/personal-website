@@ -2,12 +2,24 @@
     <div id="home-intro">
         <div class="hello" fxLayout="column">
             <h1 id="hello-title">Hello, I'm {{name}}</h1>
-            <p id="hello-desc">An aspiring software engineer</p>
+            <p id="hello-desc">Busy building, eating or sleeping...</p>
         </div>
         <button class="btn" id="about-me-button" routerLink="../about-me">About Me</button>
     </div>
     <div class="profile-photos">
-        <img class="photo" id="dp" [src]="imageSource" alt="profile-photo">
+        <picture>
+            <source [srcset]="webpSource" type="image/webp" />
+            <img
+                class="photo"
+                id="dp"
+                [src]="jpgSource"
+                width="350"
+                height="350"
+                [alt]="name + ' profile photo'"
+                loading="eager"
+                decoding="async"
+            />
+        </picture>
     </div>
 
 </div>

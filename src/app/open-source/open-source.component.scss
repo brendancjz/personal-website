@@ -1,0 +1,235 @@
+.open-source {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem 3rem;
+}
+
+.open-source-header h1 {
+  margin: 0 0 0.35rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #222222;
+}
+
+.lede {
+  margin: 0 0 1.5rem;
+  font-size: 1.1rem;
+  color: rgba(34, 34, 34, 0.85);
+}
+
+.repo-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-tab {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222222;
+  padding: 0.45rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  background-color: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-tab:hover {
+  background-color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(34, 34, 34, 0.35);
+}
+
+.filter-tab.active {
+  background-color: rgba(255, 255, 255, 0.65);
+  border-color: rgba(34, 34, 34, 0.45);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.status-bar {
+  font-size: 0.95rem;
+  color: rgba(34, 34, 34, 0.75);
+  margin-bottom: 0.75rem;
+}
+
+.status-bar .warn {
+  display: block;
+  margin-top: 0.35rem;
+  color: #8a5a00;
+}
+
+.state-message {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.state-message.error {
+  border: 1px solid rgba(180, 60, 60, 0.35);
+}
+
+.pr-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(34, 34, 34, 0.12);
+  overflow: hidden;
+  scroll-margin-top: 5.5rem;
+}
+
+.pr-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.1);
+}
+
+.pr-row:last-child {
+  border-bottom: none;
+}
+
+.pr-icon-wrap {
+  flex-shrink: 0;
+  padding-top: 0.15rem;
+  color: #6f42c1;
+}
+
+.pr-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.pr-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #222222;
+  text-decoration: none;
+  line-height: 1.35;
+  margin-bottom: 0.35rem;
+}
+
+.pr-title:hover {
+  text-decoration: underline;
+}
+
+.pr-meta {
+  font-size: 0.9rem;
+  color: rgba(34, 34, 34, 0.65);
+  line-height: 1.4;
+}
+
+.author-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  vertical-align: middle;
+}
+
+.author-avatar {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid rgba(34, 34, 34, 0.12);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.pr-meta .author {
+  font-weight: 600;
+  color: rgba(34, 34, 34, 0.8);
+}
+
+.repo-badge {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.1rem 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(34, 34, 34, 0.75);
+  vertical-align: middle;
+}
+
+.pr-comments {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: rgba(34, 34, 34, 0.55);
+  padding-top: 0.2rem;
+}
+
+.pr-comments svg {
+  opacity: 0.65;
+}
+
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  border: 1px solid rgba(34, 34, 34, 0.1);
+}
+
+.pager-range {
+  font-size: 0.95rem;
+  color: rgba(34, 34, 34, 0.75);
+}
+
+.pager-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1rem;
+}
+
+.pager-pos {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #222222;
+  min-width: 7.5rem;
+  text-align: center;
+}
+
+.pager-btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #222222;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(34, 34, 34, 0.25);
+  background-color: rgba(255, 255, 255, 0.45);
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.pager-btn:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.pager-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.empty {
+  text-align: center;
+  color: rgba(34, 34, 34, 0.7);
+  padding: 2rem 1rem;
+}

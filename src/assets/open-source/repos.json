@@ -1,0 +1,11 @@
+{
+  "repos": [
+    { "id": "formsg", "label": "FormSG", "fullName": "opengovsg/FormSG" },
+    { "id": "isomer", "label": "Isomer", "fullName": "opengovsg/isomer" },
+    {
+      "id": "roadmap",
+      "label": "Roadmap",
+      "fullName": "kamranahmedse/developer-roadmap"
+    }
+  ]
+}
